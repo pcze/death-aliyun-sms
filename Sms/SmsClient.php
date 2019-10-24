@@ -20,14 +20,10 @@ class SmsClient {
 	// 服务结点
     public $endPointName = 'cn-hangzhou';
 	
-	public function __construct(){
-		if ($this->access_key === null) {
-            throw new \Exception('The "access_key" property must be set.');
-        } elseif ($this->access_secret === null) {
-            throw new \Exception('The "access_secret" property must be set.');
-        } elseif ($this->sign_name === null) {
-            throw new \Exception('The "sign_name" property must be set.');
-        }
+	public function __construct($access_key,$access_secret,$sign_name){
+		$this->access_key = $access_key;
+		$this->access_secret = $access_secret;
+		$this->sign_name = $sign_name;
 		//初始化访问的acsCleint
         Config::load();
 	}
