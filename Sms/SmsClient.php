@@ -38,7 +38,7 @@ class SmsClient {
         //必填-短信接收号码
         $request->setPhoneNumbers($to);
         //必填-短信签名
-        $request->setSignName($this->signName);
+        $request->setSignName($this->sign_name);
         //必填-短信模板Code
         $request->setTemplateCode($template_code);
         //选填-假如模板中存在变量需要替换则为必填(JSON格式)
