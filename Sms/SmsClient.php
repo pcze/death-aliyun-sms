@@ -4,7 +4,7 @@ namespace Dethan\Dysms;
 use Dethan\AliyunSmsCore\Config;
 use Dethan\AliyunSmsCore\DefaultAcsClient;
 use Dethan\AliyunSmsCore\Profile\DefaultProfile;
-use Mrgoon\Dysmsapi\Request\V20170525\SendSmsRequest;
+use Dethan\Dysmsapi\Request\V20170525\SendSmsRequest;
 
 class SmsClient {
 	public $access_key;
