@@ -6,7 +6,7 @@ use Dethan\AliyunSmsCore\DefaultAcsClient;
 use Dethan\AliyunSmsCore\Profile\DefaultProfile;
 use Mrgoon\Dysmsapi\Request\V20170525\SendSmsRequest;
 
-class AliSms {
+class SmsClient {
 	public $access_key;
 	public $access_secret;
 	public $sign_name;
